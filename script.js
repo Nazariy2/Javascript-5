@@ -24,26 +24,69 @@
 // }
 
 
-function checkDays() {
-    const days = document.getElementById('daysOfWeek').value.toLowerCase().trim();
+// function checkDays() {
+//     const days = document.getElementById('daysOfWeek').value.toLowerCase().trim();
+//     const messageElement = document.getElementById('message');
+//     let message;
+
+//     switch(days){
+//         case 'понеділок':
+//             case 'вівторок':
+//             case 'середа':
+//             case 'четвер':
+//             case 'п\'ятниця':
+//                 message = `Введений день ${days} є робочим днем.`;
+
+//                 break;
+//             case 'субота':
+//             case 'неділя':
+//                 message = `Введений день ${days} є вихідним.`;
+//                 break;
+//             default:
+//                 message = `Введений день ${days} не є дійсним днем тижня.`;
+//     }
+//     messageElement.textContent = message;
+// }
+
+function chekMonth() {
+    const selectElement = document.getElementById('monthSelected');
+    const selectedValue = selectElement.value;
     const messageElement = document.getElementById('message');
+
     let message;
 
-    switch(days){
-        case 'понеділок':
-            case 'вівторок':
-            case 'середа':
-            case 'четвер':
-            case 'п\'ятниця':
-                message = `Введений день ${days} є робочим днем.`;
+    switch(selectedValue) {
+        case 'jan':
+            case 'feb':
+            case 'dec':
+                message = `This month  is equal to the winter`;
 
                 break;
-            case 'субота':
-            case 'неділя':
-                message = `Введений день ${days} є вихідним.`;
+        
+        case 'march':
+            case 'apr':
+            case 'may':
+                message = `This month  is equal to the Spring`;
+                
                 break;
-            default:
-                message = `Введений день ${days} не є дійсним днем тижня.`;
+
+         case 'june':
+            case 'july':
+            case 'aug':
+                message = `This month  is equal to the Summer`;
+                
+                break;
+
+        case 'sept':
+            case 'oct':
+            case 'nov':
+                message = `This month  is equal to the Autumn`;
+                
+                break;
+        
+        
     }
-    messageElement.textContent = message;
+
+    alert(message);
+    
 }
