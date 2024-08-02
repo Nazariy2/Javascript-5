@@ -48,45 +48,48 @@
 //     messageElement.textContent = message;
 // }
 
-function chekMonth() {
-    const selectElement = document.getElementById('monthSelected');
-    const selectedValue = selectElement.value;
-    const messageElement = document.getElementById('message');
+// function chekMonth() {
+//     const selectElement = document.getElementById('monthSelected');
+//     const selectedValue = selectElement.value;
+//     const messageElement = document.getElementById('message');
 
-    let message;
+//     let message;
 
-    switch(selectedValue) {
-        case 'jan':
-            case 'feb':
-            case 'dec':
-                message = `This month  is equal to the winter`;
+//     switch(selectedValue) {
+//         case 'jan':
+//             case 'feb':
+//             case 'dec':
+//                 message = `This month  is equal to the winter`;
 
-                break;
+//                 break;
         
-        case 'march':
-            case 'apr':
-            case 'may':
-                message = `This month  is equal to the Spring`;
+//         case 'march':
+//             case 'apr':
+//             case 'may':
+//                 message = `This month  is equal to the Spring`;
                 
-                break;
+//                 break;
 
-         case 'june':
-            case 'july':
-            case 'aug':
-                message = `This month  is equal to the Summer`;
+//          case 'june':
+//             case 'july':
+//             case 'aug':
+//                 message = `This month  is equal to the Summer`;
                 
-                break;
+//                 break;
 
-        case 'sept':
-            case 'oct':
-            case 'nov':
-                message = `This month  is equal to the Autumn`;
+//         case 'sept':
+//             case 'oct':
+//             case 'nov':
+//                 message = `This month  is equal to the Autumn`;
                 
-                break;
+//                 break;
         
         
-    }
+//     }
+//     with alert
+//     alert(message);
 
-    alert(message);
+//     without alert
+//     messageElement.textContent = message;
     
-}
+// }
