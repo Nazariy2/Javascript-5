@@ -120,3 +120,30 @@
 //     messageElement.textContent = days;
 
 // }
+function colorChange() {
+    const selectElement = document.getElementById('colorSelect');
+        const selectedValue = selectElement.value;
+        const messageElement = document.getElementById('message');
+    
+        let message;
+
+        switch(selectedValue) {
+            case 'Green':
+                message = 'U can go';
+                break;
+            case 'Yellow': 
+                message = 'attention please,stop moving';
+                break;
+            case 'Red':
+                message ='U cant go,wait till light turns green';
+                break;
+            
+            default:
+                message = 'u have to select a color';
+        }
+
+        //with alert
+        alert(message);
+}
+
+
