@@ -120,30 +120,74 @@
 //     messageElement.textContent = days;
 
 // }
-function colorChange() {
-    const selectElement = document.getElementById('colorSelect');
-        const selectedValue = selectElement.value;
-        const messageElement = document.getElementById('message');
+// function colorChange() {
+
+//         const selectElement = document.getElementById('colorSelect');
+//         const selectedValue = selectElement.value;
+//         const messageElement = document.getElementById('message');
     
-        let message;
+//         let message;
 
-        switch(selectedValue) {
-            case 'Green':
-                message = 'U can go';
-                break;
-            case 'Yellow': 
-                message = 'attention please,stop moving';
-                break;
-            case 'Red':
-                message ='U cant go,wait till light turns green';
-                break;
+//         switch(selectedValue) {
+//             case 'Green':
+//                 message = 'U can go';
+                
+//                 break;
+//             case 'Yellow': 
+//                 message = 'attention please,stop moving';
+//                 break;
+//             case 'Red':
+//                 message ='U cant go,wait till light turns green';
+//                 break;
             
-            default:
-                message = 'u have to select a color';
-        }
+//             default:
+//                 message = 'u have to select a color';
+//         }
 
-        //with alert
-        alert(message);
-}
+//         with alert
+//         alert(message);
+
+//         without alert
+//             messageElement.textContent = message;
+// }
+
+
+
+// function calculate() {
+//     const num1 = parseFloat(document.getElementById('num1').value);
+//     const num2 = parseFloat(document.getElementById('num2').value);
+//     const operation = document.getElementById('operation').value;
+//     const resultDiv = document.getElementById('result');
+
+//     let result;
+//     if (isNaN(num1) || isNaN(num2)) {
+//         resultDiv.textContent = "Please enter valid numbers.";
+//         return;
+//     }
+
+//     switch (operation) {
+//         case '+':
+//             result = num1 + num2;
+//             break;
+//         case '-':
+//             result = num1 - num2;
+//             break;
+//         case '*':
+//             result = num1 * num2;
+//             break;
+//         case '/':
+//             if (num2 === 0) {
+//                 resultDiv.textContent = "Division by zero is not allowed.";
+//                 return;
+//             }
+//             result = num1 / num2;
+//             break;
+//         default:
+//             resultDiv.textContent = "Unknown operation.";
+//             return;
+//     }
+
+//     resultDiv.textContent = `Result: ${result}`;
+// }
 
 
